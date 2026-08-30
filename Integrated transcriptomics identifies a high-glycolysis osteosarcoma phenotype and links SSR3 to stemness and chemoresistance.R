@@ -1,4 +1,4 @@
-# ================================================================
+# The stored raw data can be found in previous versions or downloaded via the link.
 # 完整分析脚本：GGPS 分类器构建与嵌套验证
 # 对应手稿：Integrated transcriptomics identifies a high-glycolysis osteosarcoma phenotype...
 # 数据来源：codeocean_9535428, GSE152048, GSE162454
@@ -127,10 +127,6 @@ for (test_ds in datasets) {
 # 第五部分：嵌套特征选择（核心分析）
 # ================================================================
 
-# 参数设置
-n_folds <- 10           # LASSO内部CV折数
-ntree_rf <- 500        # 随机森林树的数量
-classification_threshold <- 0.5  # 二分类阈值
 
 nested_true_list <- list()
 nested_pred_list <- list()
